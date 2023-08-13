@@ -39,7 +39,7 @@ span, p , li ,strong, option , label, input, a, b {
     min-height: 800px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 26rem;
+    max-width: 22rem;
     padding-left: 0rem;
     padding-right: 0rem;
   }
@@ -51,7 +51,7 @@ span, p , li ,strong, option , label, input, a, b {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    max-width: 26rem;
+    max-width: 22rem;
     padding-left: 0rem;
     padding-right: 0rem;
     min-height: 1200px;
@@ -59,7 +59,7 @@ span, p , li ,strong, option , label, input, a, b {
   
   .chakra-container-page3{
     background: url('../img/home2/page2/BG-1.jpg') no-repeat center center fixed; 
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center top;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -67,7 +67,7 @@ span, p , li ,strong, option , label, input, a, b {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    max-width: 26rem;
+    max-width: 22rem;
     padding-left: 0rem;
     padding-right: 0rem;
 
@@ -76,14 +76,14 @@ span, p , li ,strong, option , label, input, a, b {
 
   .chakra-container-page5{
     background: url('../img/home2/page3/BG-1.jpg') no-repeat center center fixed; 
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center top;
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    max-width: 26rem;
+    max-width: 22rem;
     padding-left: 0rem;
     padding-right: 0rem;
     min-height: 800px;
@@ -94,7 +94,7 @@ span, p , li ,strong, option , label, input, a, b {
 
     .chakra-container-page3{
       background: url('../img/home2/page2/BG-1.jpg') no-repeat center center fixed; 
-      background-size: contain;
+      background-size: 100% 100%;
       background-position: center top;
       background-repeat: no-repeat;
       background-attachment: fixed;
@@ -102,7 +102,7 @@ span, p , li ,strong, option , label, input, a, b {
       width: 100%;
       margin-left: auto;
       margin-right: auto;
-      max-width: 26rem;
+      max-width: 22rem;
       padding-left: 0rem;
       padding-right: 0rem;
   
@@ -110,14 +110,14 @@ span, p , li ,strong, option , label, input, a, b {
 
     .chakra-container-page5{
       background: url('../img/home2/page3/BG-1.jpg') no-repeat center center fixed; 
-      background-size: contain;
+      background-size: 100% 100%;
       background-position: center top;
       background-repeat: no-repeat;
       background-attachment: fixed;
       width: 100%;
       margin-left: auto;
       margin-right: auto;
-      max-width: 26rem;
+      max-width: 22rem;
       padding-left: 0rem;
       padding-right: 0rem;
       min-height: 800px;
@@ -130,7 +130,7 @@ span, p , li ,strong, option , label, input, a, b {
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    max-width: 26rem;
+    max-width: 22rem;
     padding-left: 0rem;
     padding-right: 0rem;
   }
@@ -165,6 +165,7 @@ span, p , li ,strong, option , label, input, a, b {
     height: 10px;
   }
   .bg-footer{
+    margin-bottom: -10px;
     width: 100%;
     margin-inline: auto;
     max-width: 100%;
@@ -186,7 +187,7 @@ span, p , li ,strong, option , label, input, a, b {
     justify-content: center;
     cursor: pointer;
     flex: 1 1 0%;
-    padding: 15px 15px 0px 15px;
+    padding: 15px 15px 10px 15px;
     color: #000 !important;
     position: relative;
     max-width: 120px!important;
