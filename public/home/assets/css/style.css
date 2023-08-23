@@ -5,7 +5,6 @@ Custom css
 html {
   background: black;
   height: 100%;
-  overflow: hidden;
 }
 body {
   margin: 0;
@@ -24,15 +23,37 @@ body, body, h1, h2, h3, h4, h5, h6 {
 span, p , li ,strong, option , label, input, a, b {
   font-family: 'Prompt', sans-serif !important;
 }
+.mr-10{
+  margin-right: 10px;
+}
+.mr-5x{
+  margin-right: 5px;
+}
+.box-height-15{
+  height: 15px;
+}
+.box-height-30{
+  height: 30px;
+}
+.p-10{
+  padding: 10px;
+}
 .bg-game-slot{
-  background-image: url('../img/home2/page3/Template-_v2.png');
+  background-image: url('../../../img/page3/base-ui-.png');
     /* background-position: center center; home/assets/img/page6/Rectangle.png */ 
     background-size: contain;
     background-repeat: no-repeat;
 }
+.bg_top_10game{
+  background-image: url('../../../img/page2/bg slide-1.png');
+    /* background-position: center center; home/assets/img/page6/Rectangle.png */ 
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 200px;
+}
 .chakra-container{
-    background-image: url('../img/home2/page1/BG.jpg');
-    /* background-position: center center; */
+    background-image: url('../../../img/page1/bg-p1.png');
+    /* background-position: center center; ../../../img/page2/bg_page_2.png */ 
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -58,7 +79,7 @@ span, p , li ,strong, option , label, input, a, b {
   }
   
   .chakra-container-page3{
-    background: url('../img/home2/page2/BG-1.jpg') no-repeat center center fixed; 
+    background: url('../../../img/page2/bg_page_2.png') no-repeat center center fixed; 
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -93,12 +114,11 @@ span, p , li ,strong, option , label, input, a, b {
   @media (min-width: 991px) {
 
     .chakra-container-page3{
-      background: url('../img/home2/page2/BG-1.jpg') no-repeat center center fixed; 
-      background-size: contain;
+      background: url('../../../img/page2/bg_page_2.png') no-repeat center center fixed; 
+      background-size: auto;
       background-position: center top;
       background-repeat: no-repeat;
       background-attachment: fixed;
-      min-height: 800px;
       width: 100%;
       margin-left: auto;
       margin-right: auto;
@@ -335,18 +355,17 @@ span, p , li ,strong, option , label, input, a, b {
     padding-top: 2px;
 }
 .percen_winrate{
-    color: #ff0000;
+    color: #01c612;
     font-weight: 700;
     font-size: 18px;
     margin-bottom: 0rem;
-    -webkit-text-stroke: 0.5px #fff;
     margin-top: -5px;
     font-family: 'Geologica', sans-serif !important;
 }
 .text-white-pre-p5{
     font-weight: 500;
     font-size: 10px;
-    color: #fff;
+    color: #000;
     font-weight: 700;
     margin-top: -12px;
     height: 12px;
@@ -359,9 +378,9 @@ span, p , li ,strong, option , label, input, a, b {
   color: #f54394;
 }
 .gd-warning {
-  color: #fff;
+  color: #000;
   border: none;
-  background: #DF2669 linear-gradient(45deg, #24effe, #149be6);
+  background: #DF2669 linear-gradient(45deg, #41e651, #41e651);
 }
 .coin {
   width: 85%;

@@ -11,11 +11,15 @@
 
 @section('content')
 
-<div id="main" class="layout-column flex" style="position: absolute;    margin-left: auto; width: 100%; margin-right: auto;">
-    <div class="chakra-container">
+<div id="main" class="layout-column flex" style="position: absolute;  height: 100vh;  margin-left: auto; width: 100%; margin-right: auto;">
+    <div class="chakra-container" style="height: 100vh;">
         <div id="content" class="flex ">
             <div class="box-height-20"></div>
-            <img class="img-fluid logo_website2" src="{{ url('/home/assets/img/home2/logo_app2.png') }}">
+            <img class="img-fluid logo_website2" src="{{ url('/img/god-of-slot-copy.png') }}">
+            <div class="text-center">
+                <img class="img-fluid" src="{{ url('/img/page1/text login_.png') }}" style="max-width:60%">
+            </div>
+            
             <form method="POST" id="myForm" action="{{ route('login') }}">
                 {{ csrf_field() }}
                 <div class="card-body">
@@ -39,46 +43,27 @@
 
                     <div class="d-flex">
                         <div style="height: 70px;">
-                            <img class="img-fluid img-input" src="{{ url('/home/assets/img/home2/page1/ปุ่ม-ยูสเซอร์.png') }}" style="">
+                            <img class="img-fluid img-input" src="{{ url('/img/page1/login username _1.png') }}" style="">
                             <input type="text" class="form-control-img"  name="username" value="{{ old('username') }}" required >
                         </div>
                     </div>
                     <div class="box-height-10"></div>
                     <div class="d-flex">
                         <div style="height: 70px;">
-                            <img class="img-fluid img-input" src="{{ url('/home/assets/img/home2/page1/ปุ่ม-พาสเวิร์ด.png') }}" style="">
+                            <img class="img-fluid img-input" src="{{ url('/img/page1/password_1.png') }}" style="">
                             <input type="password" class="form-control-img"  name="password" required >
                             <div class="box-height-10"></div>
                         </div>
                     </div>
                     <div class="box-height-10"></div>
                     <div class="d-flex justify-content-center">
-                        <a href="#" onclick="myFunction()" ><img class="img-fluid" src="{{ url('/home/assets/img/home2/page1/ปุ่ม-LOGIN.png') }}" style="height: 50px;"></a>
+                        <a href="#" onclick="myFunction()" ><img class="img-fluid" src="{{ url('/img/page1/button login.png') }}" style="height: 35px;"></a>
                     </div>
                     
                 </div>
             </form>
         </div>
-        <div class="d-footer">
-       
-            <div class="chakra-container-f">
-                <div class="bg-footer">
-                    <div class="d-flex justify-content-between">
-                        <a class="nav-footer-a">
-                            <img class="img-fluid" src="{{ url('/home/assets/img/home2/page1/icon-หน้าแรก.png') }}" style="height: 36px; width:36px;">
-                            <p class="chakra-text-footer">หน้าแรก</p>
-                        </a>
-                        <a href="{{ get_line_url() }}" class="nav-footer-a" target="_blank">
-                            <img class="img-fluid" src="{{ url('/home/assets/img/home2/page1/icon-สมัคร.png') }}" style="height: 36px; width:36px;">
-                            <p class="chakra-text-footer">สมัครสมาชิก</p>
-                        </a>
-                    </div>
-                </div>
-                <a href="{{ get_banner_url() }}">
-                    <img class="img-fluid" src="{{ url('media/'.get_banner_img()) }}">
-                </a>
-            </div>
-        </div>
+        
     </div>
 </div>
 

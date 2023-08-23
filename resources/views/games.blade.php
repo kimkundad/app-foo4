@@ -13,25 +13,42 @@
 
 
 
-<div id="main" class="layout-column flex" style="position: absolute;    margin-left: auto; width: 100%; margin-right: auto;">
-    <div class="chakra-container-page3">
+<div id="main" class="layout-column flex" style="position: absolute; height: 100vh; margin-left: auto; width: 100%; margin-right: auto;">
+    <div class="chakra-container-page3" style="overflow: auto; height: 100vh;">
         <div id="content" class="flex ">
             <div class="box-height-20"></div>
             <div class="d-flex flex-row-reverse pad-l-r">
                 
                 <a href="{{ url('/logout') }}">
-                    <img class="img-fluid" src="{{ url('/home/assets/img/home2/page3/ล็อคเอ้าท์.png') }}" style="height: 30px; width:85px;">
+                    <img class="img-fluid" src="{{ url('/img/page2/logout button.png') }}" style="height: 25px;">
                 </a>
+                <img class="img-fluid mr-10" src="{{ url('/img/page2/user.png') }}" style="height: 25px; ">
+                <img class="img-fluid mr-10" src="{{ url('/img/page2/ai.png') }}" style="height: 25px; ">
+                <img class="img-fluid mr-10" src="{{ url('/img/page2/home icon.png') }}" style="height: 25px; ">
+                
+                
+
             </div>
             <div class="text-center">
-            <a href="{{ url('/welcome') }}">
-                <img class="img-fluid logo_website_slot" src="{{ url('/home/assets/img/home2/logo_app2.png') }}">
-            </a>
-                
+                <div class="box-height-15"></div>
                 <div class="text-center">
                     <a href="#">
-                        <img class="img-fluid" src="{{ url('/home/assets/img/home2/page2/เลือกค่ายที่ต้องการใช้สูตร.png') }}" style="height: 36px; width:240px ">
-                        <p class="text-yello-p3">เลือกค่ายเกมส์ที่ต้องการสแกน</p>
+                        <img class="img-fluid" src="{{ url('/img/page2/text god of สูครอันดับ 1.png') }}" style="height: 40px; ">
+                    </a>
+                </div>
+                <div class="box-height-10"></div>
+                <div class="bg_top_10game">
+                    <div class="autoplay" style="padding-top: 35px">
+                        @if(isset($game))
+                        @foreach($game as $u)
+                        <img class="img-fluid p-10" src="{{ url('images/game/room/'.$u->room_image) }}"/>
+                        @endforeach
+                        @endif
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="#">
+                        <img class="img-fluid" src="{{ url('/img/page2/เลือกค่ายเกมที่ต้องสแกน.png') }}" style="height: 40px; ">
                     </a>
                 </div>
                 <div class="box-height-10"></div>
@@ -75,5 +92,17 @@
 @endsection
 
 @section('scripts')
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+
+$('.autoplay').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 1500,
+});
+
+</script>
 
 @stop('scripts')

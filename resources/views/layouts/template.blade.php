@@ -28,7 +28,10 @@
 </head>
 
 <body class="layout-row">
-    <canvas id="Matrix"></canvas>
+
+        <div class="canvas-wrapper">
+            <canvas id="Matrix"></canvas>
+        </div>
 
         @if (Auth::guest())
         @else
