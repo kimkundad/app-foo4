@@ -108,9 +108,7 @@
                         .gameName-p6{
                             margin-top: -8px
                         }
-                        .winrate{
-                            font-size: 10px;
-                        }
+                        
                         .funcx{
                             text-align: end;
                             margin-top: -3px;
@@ -145,7 +143,7 @@
                             @endphp
                             <div class="text-center">
                                 <a href="#">
-                                    <div class="bg-game-slot" style="width: 122px; height:88px; padding: 8px 7px 12px 7px; }}');">
+                                    <div class="bg-game-slot boxx_gamex padd_x" >
                                         <p class="gameName-p6">{{ $u->room }} </p>
                                         <div class="d-flex justify-content-between" style="margin-top:0px">
                                             <img src="{{ url('images/game/room/'.$u->room_image) }}" style="width: 50px; height: 52px; border-radius: 5px; padding-top:5px">
@@ -160,7 +158,7 @@
                                         </div>
                                         <div class="d-flex">
                                             <img src="{{ url('images/game/game/'.$game->game_image) }}" class="logo_gamesx">
-                                        <div style="margin-top:11px; width: 90px; float:right; margin-right:-5px">
+                                        <div class="recen_x" style="float:right; margin-right:-5px">
                                             <div class="" style=" ">
                                                 <div id="xroom-percent-{{ $u->id }}" class="progress " style="height:12px; ">
                                                     <div class="progress-bar  gd-warning" data-toggle="tooltip" title="{{ $u->percent }}%" style="width: {{ $u->percent }}%"></div>
