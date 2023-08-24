@@ -102,6 +102,9 @@ $('.autoplay').slick({
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 1500,
+  dots: false,
+    prevArrow: false,
+    nextArrow: false
 });
 
 </script>
