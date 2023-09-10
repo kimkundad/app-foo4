@@ -146,7 +146,7 @@
                                     <div class="bg-game-slot boxx_gamex padd_x" >
                                         <p class="gameName-p6">{{ $u->room }} </p>
                                         <div class="d-flex justify-content-between" style="margin-top:0px">
-                                            <img src="{{ url('images/game/room/'.$u->room_image) }}" style="width: 50px; height: 52px; border-radius: 5px; padding-top:5px">
+                                            <img src="https://auto.deksilp.com/images/game/room/{{ $u->room_image }}" style="width: 50px; height: 52px; border-radius: 5px; padding-top:5px">
                                             <div class="text-center" style="height: 50px;">
                                                 <p class="winrate"> อัตราการชนะ </p>
                                                 <p class="percen_winrate" id="room-percent-{{ $u->id }}"> {{ $u->percent }}% </p>

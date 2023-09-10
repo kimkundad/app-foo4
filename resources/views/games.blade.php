@@ -41,7 +41,7 @@
                     <div class="autoplay" style="padding-top: 35px">
                         @if(isset($game))
                         @foreach($game as $u)
-                        <img class="img-fluid p-10" src="{{ url('images/game/room/'.$u->room_image) }}"/>
+                        <img class="img-fluid p-10" src="https://auto.deksilp.com/images/game/room/{{ $u->room_image }}"/>
                         @endforeach
                         @endif
                     </div>
